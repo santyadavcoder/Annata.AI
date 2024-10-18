@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body{
+            background-color: #ffa3a3c6; 
+        }
+        .container {
+          max-width: 600px;
+          margin: 50px auto;
+          padding: 20px;
+          background-color:transparent;
+          border-radius: 15px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          color: rgb(255, 250, 250);
+          
+
+        }
+      
+        .form-control {
+          font-size: 1.5rem;
+          padding: 20px;
+          margin: 10px 0;
+          border: 2px solid #343a40;
+          border-radius: 10px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease;
+          width: 540px;
+        }
+      
+        .form-control:focus {
+          border-color: #37ff00;
+          box-shadow: 0 0 10px rgba(32, 235, 62, 0.93);
+        }
+      
+        .btn-dark {
+          font-size: 1.5rem;
+          padding: 15px 30px;
+          background-color:transparent;
+          border: none;
+          border-radius: 10px;
+          width: 100%;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+      
+        .btn-dark:hover {
+          background-color: #00ff73;
+          color: #fff;
+        }
+      
+        .form-group textarea {
+          height: 200px;
+        }
+      
+        .form-row .col {
+          margin-bottom: 20px;
+        }
+        h1{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        
+        a.button {
+            padding: 1px 6px;
+            border: 1px outset buttonborder;
+            border-radius: 3px;
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+            font-size: 21px;
+        }
+        
+      </style>
+      
+      
+</head>
+<body>
+    <div>
+        <a href="/index.html" class="button">HOME</a>
+    </div>
+    <div><h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Get In Touch 🫶🏻 </h1></div>
+    <div class="container">
+        
+        <form target="_blank" action="https://formsubmit.co/santoshyadavsantoshyadav@gmail.con" method="POST">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+              </div>
+              <div class="col">
+                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+        </form>
+      </div>
+</body>
+</html>

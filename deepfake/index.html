@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Detection</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+         .logo {
+            position: absolute;
+            top: 10px; /* Distance from the top */
+             /* Distance from the left */
+             
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    
+    <section class="navbar">
+        <!-- Logo on the left -->
+        <div class="logo">
+            <img width="208" height="46" src="teamimg/ananta logo.png" alt="Annata Logo">
+        </div>
+    </section>
+    <div class="container">
+        <div class="video-container">
+            <video id="videoPlayer" width="640" height="360" controls autoplay >
+                <source id="videoSource" src="webvideo/trevor_sesli (1).mp4" type="video/mp4">
+               
+            </video>
+            <div class="controls">
+                <button id="nextBtn">Next Video</button>
+            </div>
+        </div>
+        <header>FAKE AI GERNATED VIDEOS</header>
+        
+        <h1>ANNATA</h1>
+        <H2>Scan & Detect
+            Deepfake Videos</H2>
+        <form id="deepfakeForm">
+            <input type="file" id="mediaFile" accept="image/*,video/*" required>
+            <button type="submit">GO TO SCANNER</button>
+            <strong>CHECK YOURs FAKE VIDEOS?</strong>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="scrpit.js"></script>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/index.html">HOME</a>
+        <a href="/about.html">ABOUT</a>
+        <a href="/work.html">HOW ITS WORK</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()">CHECK MORE ABOUT US</span>
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+      </div>
+    
+</body>
+
+
+</html>

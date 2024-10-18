@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deepfake AI Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ffa3a3c6;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .blog-section {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .scrollable {
+            height: 80vh;
+            overflow-y: auto;
+            padding-right: 20px;
+        }
+        footer {
+            background-color:  #ffa3a3c6;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        a.button {
+            position: absolute;
+            top: auto;
+            margin-top: 10px;
+            border: 1px outset buttonborder;
+            border-radius: 3px;
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+            font-size: 21px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="/index.html" class="button">HOME</a>
+    </div>
+
+<header>
+    <h1>Understanding Deepfake AI Detection</h1>
+    <p>A comprehensive guide to how we detect AI-generated deepfake videos and images.</p>
+</header>
+
+<div class="container scrollable">
+    <div class="blog-section">
+        <h2>What is a Deepfake?</h2>
+        <p>Deepfakes are synthetic media where a person's likeness is manipulated using AI to create highly realistic fake images or videos. 
+           These manipulations use deep learning techniques to swap faces, synthesize speech, and create realistic yet completely fabricated media.</p>
+    </div>
+
+    <div class="blog-section">
+        <h2>How Do Deepfakes Work?</h2>
+        <p>Deepfake technology works by using generative adversarial networks (GANs). A GAN consists of two neural networks, the generator and the discriminator. 
+           The generator creates fake content, while the discriminator evaluates the generated content against real-world data. This back-and-forth process helps 
+           refine the generated content until it becomes indistinguishable from real-world media.</p>
+        <p>Deepfakes primarily work through a process called "face-swapping," where the target face is replaced by another face in videos or images. This involves training 
+           an AI model with multiple layers of deep learning techniques to recognize and replicate facial features, expressions, and movements.</p>
+    </div>
+
+    <div class="blog-section">
+        <h2>Detecting Deepfakes: The Challenges</h2>
+        <p>While deepfake technology can produce very realistic results, detecting them involves analyzing subtle details. Key indicators of deepfake content include:</p>
+        <ul>
+            <li>Inconsistent lighting or shadows</li>
+            <li>Unnatural facial movements or lip-sync errors</li>
+            <li>Inconsistent facial expressions or skin textures</li>
+            <li>Artifacts around the face or background distortions</li>
+        </ul>
+        <p>AI-based detection techniques use algorithms to track these inconsistencies and flag manipulated media.</p>
+    </div>
+
+    <div class="blog-section">
+        <h2>Our Approach to Deepfake Detection</h2>
+        <p>Our deepfake detection system uses a combination of machine learning techniques to analyze patterns in videos and images. We focus on inconsistencies 
+           in facial movements, lighting, and texture details. This allows our system to detect even the most subtle signs of manipulation.</p>
+        <p>By employing Convolutional Neural Networks (CNNs), we extract features from the image or video frames to differentiate between real and manipulated media. 
+           Additionally, we incorporate motion-based analysis to detect unnatural transitions and frame-level discrepancies.</p>
+    </div>
+
+    <div class="blog-section">
+        <h2>How to Protect Against Deepfakes</h2>
+        <p>Deepfakes pose significant threats to privacy, security, and trust. Here are some ways individuals and organizations can protect against them:</p>
+        <ul>
+            <li>Use AI detection tools to flag potentially manipulated media</li>
+            <li>Conduct media forensics to analyze inconsistencies</li>
+            <li>Educate the public about the risks and signs of deepfakes</li>
+            <li>Develop policies and regulations to address the misuse of deepfake technology</li>
+        </ul>
+    </div>
+
+    <div class="blog-section">
+        <h2>Sample Images of Deepfake Detection</h2>
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*FnjgQtRlvaFlZWclOmmxww.jpeg" alt="Deepfake Detection Example 1">
+        <p>Example 1: This image showcases a detected deepfake where the face-swapping manipulation is visible due to lighting inconsistencies.</p>
+        
+        <img src="https://www.tech101.in/wp-content/uploads/2018/09/001-texture-recognition.jpeg" alt="Deepfake Detection Example 2">
+        <p>Example 2: In this image, the facial textures and skin tone give away the presence of AI-generated content, as detected by our algorithm.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Deepfake Detection Blog | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
